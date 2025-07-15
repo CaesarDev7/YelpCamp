@@ -4,9 +4,7 @@ const { places, descriptors } = require('./seedHelpers');
 const Campground = require('../models/campground');
 
 mongoose.connect('mongodb://localhost:27017/camp-site', {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true
+    
 });
 
 const db = mongoose.connection;
